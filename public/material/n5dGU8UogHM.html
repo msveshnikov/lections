@@ -1,1 +1,59 @@
-<p style="text-align:justify"><span style="font-size:20px">Для реализации графа в виде списка инцидентности можно использовать следующий тип:</span></p><p style="text-align:justify"><span style="font-size:20px">Type List = ^S;</span></p><p style="text-align:justify"><span style="font-size:20px">S = record;</span></p><p style="text-align:justify"><span style="font-size:20px">inf: Byte;</span></p><p style="text-align:justify"><span style="font-size:20px">next: List;</span></p><p style="text-align:justify"><span style="font-size:20px">end;</span></p><p style="text-align:justify"><span style="font-size:20px">Тогда граф задается следующим образом:</span></p><p style="text-align:justify"><span style="font-size:20px">Var Gr: array[1..n] of List;</span></p><p style="text-align:justify"><span style="font-size:20px">Теперь обратимся к процедуре обхода графа. Это вспомогательный алгоритм, который позволяет просмотреть все вершины графа, проанализировать все информационные поля. Если рассматривать обход графа в глубину, то существуют два типа алгоритмов: рекурсивный и нерекурсивный.</span></p><p style="text-align:justify"><span style="font-size:20px">На языке Pascal процедура обхода в глубину будет выглядеть следующим образом:</span></p><p style="text-align:justify"><span style="font-size:20px">Procedure Obhod(gr: Graph; k: Byte);</span></p><p style="text-align:justify"><span style="font-size:20px">Var g: Graph; l: List;</span></p><p style="text-align:justify"><span style="font-size:20px">Begin</span></p><p style="text-align:justify"><span style="font-size:20px">nov[k]:= false;</span></p><p style="text-align:justify"><span style="font-size:20px">g:= gr;</span></p><p style="text-align:justify"><span style="font-size:20px">While g^.inf &lt;&gt; k do</span></p><p style="text-align:justify"><span style="font-size:20px">g:= g^.next;</span></p><p style="text-align:justify"><span style="font-size:20px">l:= g^.smeg;</span></p><p style="text-align:justify"><span style="font-size:20px">While l &lt;&gt; nil do begin</span></p><p style="text-align:justify"><span style="font-size:20px">If nov[l^.inf] then Obhod(gr, l^.inf);</span></p><p style="text-align:justify"><span style="font-size:20px">l:= l^.next;</span></p><p style="text-align:justify"><span style="font-size:20px">End;</span></p><p style="text-align:justify"><span style="font-size:20px">End;</span></p><div class="fb2-empty-line" style="font-family: Arial; color: rgb(0, 0, 0); text-align: justify; font-size: 18px; height: 10px; line-height: 27px;">&nbsp;</div><p style="text-align:justify"><span style="font-size:20px">Представление графа списком списков</span></p><p style="text-align:justify"><span style="font-size:20px">Граф можно определить с помощью списка списков следующим образом:</span></p><p style="text-align:justify"><span style="font-size:20px">Type List = ^Tlist;</span></p><p style="text-align:justify"><span style="font-size:20px">Tlist = record</span></p><p style="text-align:justify"><span style="font-size:20px">inf: Byte;</span></p><p style="text-align:justify"><span style="font-size:20px">next: List;</span></p><p style="text-align:justify"><span style="font-size:20px">end;</span></p><p style="text-align:justify"><span style="font-size:20px">Graph = ^TGpaph;</span></p><p style="text-align:justify"><span style="font-size:20px">TGpaph = record</span></p><p style="text-align:justify"><span style="font-size:20px">inf: Byte;</span></p><p style="text-align:justify"><span style="font-size:20px">smeg: List;</span></p><p style="text-align:justify"><span style="font-size:20px">next: Graph;</span></p><p style="text-align:justify"><span style="font-size:20px">end;</span></p><div class="fb2-empty-line" style="font-family: Arial; color: rgb(0, 0, 0); text-align: justify; font-size: 18px; height: 10px; line-height: 27px;">&nbsp;</div><p style="text-align:justify"><span style="font-size:20px">При обходе графа в ширину мы выбираем произвольную вершину и просматриваем сразу все вершины, смежные с ней.</span></p><p style="text-align:justify"><span style="font-size:20px">Приведем процедуру обхода графа в ширину на псевдокоде:</span></p><p style="text-align:justify"><span style="font-size:20px">Procedure Obhod2(v);</span></p><p style="text-align:justify"><span style="font-size:20px">Begin</span></p><p style="text-align:justify"><span style="font-size:20px">queue = O;</span></p><p style="text-align:justify"><span style="font-size:20px">queue &lt;= v;</span></p><p style="text-align:justify"><span style="font-size:20px">nov[v] = False;</span></p><p style="text-align:justify"><span style="font-size:20px">While queue &lt;&gt; O do</span></p><p style="text-align:justify"><span style="font-size:20px">Begin</span></p><p style="text-align:justify"><span style="font-size:20px">p &lt;= queue;</span></p><p style="text-align:justify"><span style="font-size:20px">For u in spisok(p) do</span></p><p style="text-align:justify"><span style="font-size:20px">If nov[u] then</span></p><p style="text-align:justify"><span style="font-size:20px">Begin</span></p><p style="text-align:justify"><span style="font-size:20px">nov[u]:= False;</span></p><p style="text-align:justify"><span style="font-size:20px">queue &lt;= u;</span></p><p style="text-align:justify"><span style="font-size:20px">End;</span></p><p style="text-align:justify"><span style="font-size:20px">End;</span></p><p style="text-align:justify"><span style="font-size:20px">End;</span></p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p><span>Для реализации графа в виде списка инцидентности можно использовать следующий тип:</span></p>
+<p><span>Type List = ^S;</span></p>
+<p><span>S = record;</span></p>
+<p><span>inf: Byte;</span></p>
+<p><span>next: List;</span></p>
+<p><span>end;</span></p>
+<p><span>Тогда граф задается следующим образом:</span></p>
+<p><span>Var Gr: array[1..n] of List;</span></p>
+<p><span>Теперь обратимся к процедуре обхода графа. Это вспомогательный алгоритм, который позволяет просмотреть все вершины графа, проанализировать все информационные поля. Если рассматривать обход графа в глубину, то существуют два типа алгоритмов: рекурсивный и нерекурсивный.</span></p>
+<p><span>На языке Pascal процедура обхода в глубину будет выглядеть следующим образом:</span></p>
+<p><span>Procedure Obhod(gr: Graph; k: Byte);</span></p>
+<p><span>Var g: Graph; l: List;</span></p>
+<p><span>Begin</span></p>
+<p><span>nov[k]:= false;</span></p>
+<p><span>g:= gr;</span></p>
+<p><span>While g^.inf &lt;&gt; k do</span></p>
+<p><span>g:= g^.next;</span></p>
+<p><span>l:= g^.smeg;</span></p>
+<p><span>While l &lt;&gt; nil do begin</span></p>
+<p><span>If nov[l^.inf] then Obhod(gr, l^.inf);</span></p>
+<p><span>l:= l^.next;</span></p>
+<p><span>End;</span></p>
+<p><span>End;</span></p>
+<div class="fb2-empty-line"> </div>
+<p><span>Представление графа списком списков</span></p>
+<p><span>Граф можно определить с помощью списка списков следующим образом:</span></p>
+<p><span>Type List = ^Tlist;</span></p>
+<p><span>Tlist = record</span></p>
+<p><span>inf: Byte;</span></p>
+<p><span>next: List;</span></p>
+<p><span>end;</span></p>
+<p><span>Graph = ^TGpaph;</span></p>
+<p><span>TGpaph = record</span></p>
+<p><span>inf: Byte;</span></p>
+<p><span>smeg: List;</span></p>
+<p><span>next: Graph;</span></p>
+<p><span>end;</span></p>
+<div class="fb2-empty-line"> </div>
+<p><span>При обходе графа в ширину мы выбираем произвольную вершину и просматриваем сразу все вершины, смежные с ней.</span></p>
+<p><span>Приведем процедуру обхода графа в ширину на псевдокоде:</span></p>
+<p><span>Procedure Obhod2(v);</span></p>
+<p><span>Begin</span></p>
+<p><span>queue = O;</span></p>
+<p><span>queue &lt;= v;</span></p>
+<p><span>nov[v] = False;</span></p>
+<p><span>While queue &lt;&gt; O do</span></p>
+<p><span>Begin</span></p>
+<p><span>p &lt;= queue;</span></p>
+<p><span>For u in spisok(p) do</span></p>
+<p><span>If nov[u] then</span></p>
+<p><span>Begin</span></p>
+<p><span>nov[u]:= False;</span></p>
+<p><span>queue &lt;= u;</span></p>
+<p><span>End;</span></p>
+<p><span>End;</span></p>
+<p><span>End;</span></p>
+</body></html>

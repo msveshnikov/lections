@@ -1,1 +1,37 @@
-<p style="text-align:justify"><span style="font-size:20px">Если определен порожденный тип, то методы порождающего типа наследуются, однако при желании они могут переопределяться. Для переопределения наследуемого метода попросту описывается новый метод с тем же именем, что и наследуемый метод, но с другим телом и (при необходимости) с другим множеством параметров.</span></p><p style="text-align:justify"><span style="font-size:20px">Определим дочерний по отношению к TEmployee тип, представляющий работника, которому платится часовая ставка, в следующем примере:</span></p><p style="text-align:justify"><span style="font-size:20px">const</span></p><p style="text-align:justify"><span style="font-size:20px">PayPeriods = 26; { периоды выплат }</span></p><p style="text-align:justify"><span style="font-size:20px">OvertimeThreshold = 80; { на период выплаты }</span></p><p style="text-align:justify"><span style="font-size:20px">OvertimeFactor = 1.5; { почасовой коэффициент }</span></p><p style="text-align:justify"><span style="font-size:20px">type</span></p><p style="text-align:justify"><span style="font-size:20px">THourly = object(TEmployee)</span></p><p style="text-align:justify"><span style="font-size:20px">Time: Integer;</span></p><p style="text-align:justify"><span style="font-size:20px">procedure Init(AName, ATitle: string; ARate:</span></p><p style="text-align:justify"><span style="font-size:20px">Real, Atime: Integer);</span></p><p style="text-align:justify"><span style="font-size:20px">function GetPayAmount: Real;</span></p><p style="text-align:justify"><span style="font-size:20px">end;</span></p><p style="text-align:justify"><span style="font-size:20px">procedure THourly.Init(AName, ATitle: string;</span></p><p style="text-align:justify"><span style="font-size:20px">ARate: Real, Atime: Integer);</span></p><p style="text-align:justify"><span style="font-size:20px">begin</span></p><p style="text-align:justify"><span style="font-size:20px">TEmployee.Init(AName, ATitle, ARate);</span></p><p style="text-align:justify"><span style="font-size:20px">Time:= ATime;</span></p><p style="text-align:justify"><span style="font-size:20px">end;</span></p><p style="text-align:justify"><span style="font-size:20px">function THourly.GetPayAmount: Real;</span></p><p style="text-align:justify"><span style="font-size:20px">var</span></p><p style="text-align:justify"><span style="font-size:20px">Overtime: Integer;</span></p><p style="text-align:justify"><span style="font-size:20px">begin</span></p><p style="text-align:justify"><span style="font-size:20px">Overtime:= Time &ndash; OvertimeThreshold;</span></p><p style="text-align:justify"><span style="font-size:20px">if Overtime &gt; 0 then</span></p><p style="text-align:justify"><span style="font-size:20px">GetPayAmount:= RoundPay(OvertimeThreshold * Rate</span></p><p style="text-align:justify"><span style="font-size:20px">+</span></p><p style="text-align:justify"><span style="font-size:20px">Rate OverTime * OvertimeFactor</span></p><p style="text-align:justify"><span style="font-size:20px">* Rate)</span></p><p style="text-align:justify"><span style="font-size:20px">else</span></p><p style="text-align:justify"><span style="font-size:20px">GetPayAmount:= RoundPay(Time * Rate)</span></p><p style="text-align:justify"><span style="font-size:20px">end;</span></p><p style="text-align:justify"><span style="font-size:20px">Вызывая переопределяемый метод, необходимо быть уверенным в том, что порожденный тип объекта включает функциональность родителя. Кроме того, любое изменение в родительском методе автоматически оказывает влияние на все порожденные.</span></p><p style="text-align:justify"><span style="font-size:20px">Важное замечание: хотя методы могут быть переопределены, поля данных переопределяться не могут. После того как было определено поле данных в иерархии объекта, никакой дочерний тип не может определить поле данных в точности с таким же именем.</span></p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p><span>Если определен порожденный тип, то методы порождающего типа наследуются, однако при желании они могут переопределяться. Для переопределения наследуемого метода попросту описывается новый метод с тем же именем, что и наследуемый метод, но с другим телом и (при необходимости) с другим множеством параметров.</span></p>
+<p><span>Определим дочерний по отношению к TEmployee тип, представляющий работника, которому платится часовая ставка, в следующем примере:</span></p>
+<p><span>const</span></p>
+<p><span>PayPeriods = 26; { периоды выплат }</span></p>
+<p><span>OvertimeThreshold = 80; { на период выплаты }</span></p>
+<p><span>OvertimeFactor = 1.5; { почасовой коэффициент }</span></p>
+<p><span>type</span></p>
+<p><span>THourly = object(TEmployee)</span></p>
+<p><span>Time: Integer;</span></p>
+<p><span>procedure Init(AName, ATitle: string; ARate:</span></p>
+<p><span>Real, Atime: Integer);</span></p>
+<p><span>function GetPayAmount: Real;</span></p>
+<p><span>end;</span></p>
+<p><span>procedure THourly.Init(AName, ATitle: string;</span></p>
+<p><span>ARate: Real, Atime: Integer);</span></p>
+<p><span>begin</span></p>
+<p><span>TEmployee.Init(AName, ATitle, ARate);</span></p>
+<p><span>Time:= ATime;</span></p>
+<p><span>end;</span></p>
+<p><span>function THourly.GetPayAmount: Real;</span></p>
+<p><span>var</span></p>
+<p><span>Overtime: Integer;</span></p>
+<p><span>begin</span></p>
+<p><span>Overtime:= Time – OvertimeThreshold;</span></p>
+<p><span>if Overtime &gt; 0 then</span></p>
+<p><span>GetPayAmount:= RoundPay(OvertimeThreshold * Rate</span></p>
+<p><span>+</span></p>
+<p><span>Rate OverTime * OvertimeFactor</span></p>
+<p><span>* Rate)</span></p>
+<p><span>else</span></p>
+<p><span>GetPayAmount:= RoundPay(Time * Rate)</span></p>
+<p><span>end;</span></p>
+<p><span>Вызывая переопределяемый метод, необходимо быть уверенным в том, что порожденный тип объекта включает функциональность родителя. Кроме того, любое изменение в родительском методе автоматически оказывает влияние на все порожденные.</span></p>
+<p><span>Важное замечание: хотя методы могут быть переопределены, поля данных переопределяться не могут. После того как было определено поле данных в иерархии объекта, никакой дочерний тип не может определить поле данных в точности с таким же именем.</span></p>
+</body></html>

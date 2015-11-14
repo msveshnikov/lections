@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
     add_breadcrumb 'МЕНЮ', :root_path
     if params[:search]
       @articles = Article.search(params[:search])
-      redirect_to articles_path(@articles[0]) if @articles.size == 1
+      redirect_to article_path(@articles[0]) if @articles.size == 1
     else
       @recipes = Article.all
     end
