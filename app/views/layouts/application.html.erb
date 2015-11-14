@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lections</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title> <%= full_title(yield(:title)) %> </title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="description" content="Готовим дома. Коллекция кулинарных рецептов с фотографиями и советами по приготовлению, составом, рейтингом блюд">
+  <meta name="keywords" content="рецепты, кулинарные, кулинария, кухня, салаты, блюда, закуски, торты, напитки">
+
 </head>
 <body>
+<%= link_to image_tag("top.jpg"), root_path %>
 
-<%= yield %>
+<% if postinfo && cookies[:nopost]!="1" %>
+    <h4 class="box">
+      <a class="close"> <%= image_tag "close.png" %> </a>
+      <%= postinfo %>
+    </h4>
+<% end %>
+
+<ol class="breadcrumb">
+  <%= render_breadcrumbs :tag => :li, :separator => " · " %>
+</ol>
+
+
+<br><br>
+<aside class="span8">
+  <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+  <%= yield %>
+  <br><br>
+
+</aside>
+<aside class="span3">
+
+  <br>
+  <%= link_to "Jessika Blog", "http://jessika.tk", target: "_blank" %>
+  <br>
+  <%= link_to "Мобильная версия", mobile: 1 %>
+  <br><br>
+  <a href="http://www.bestappsmarket.com/p/app?appId=214672&amp;title=balls-lines" title="Balls (Lines) is in Best Apps Market!" target="_blank"><img border="0" src="http://www.bestappsmarket.com/sr/images/award-2.png"></a>
+  <br><br>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:300px;height:600px"
+       data-ad-client="ca-pub-1351673544337847"
+       data-ad-slot="2591225138"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</aside>
+
+
+<%= image_tag("footer.jpg") %>
 
 </body>
 </html>

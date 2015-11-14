@@ -3,6 +3,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
+
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'russian', '~> 0.6.0'
+gem 'bootstrap-will_paginate'
+gem 'breadcrumbs_on_rails'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -32,4 +38,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
+  gem 'thin'
+end
 
