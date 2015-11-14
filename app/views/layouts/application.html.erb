@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> <%= full_title(yield(:title)) %> </title>
+  <title> Лекции и шпаргалки </title>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -11,13 +11,6 @@
 </head>
 <body>
 <%= link_to image_tag("top.jpg"), root_path %>
-
-<% if postinfo && cookies[:nopost]!="1" %>
-    <h4 class="box">
-      <a class="close"> <%= image_tag "close.png" %> </a>
-      <%= postinfo %>
-    </h4>
-<% end %>
 
 <ol class="breadcrumb">
   <%= render_breadcrumbs :tag => :li, :separator => " · " %>

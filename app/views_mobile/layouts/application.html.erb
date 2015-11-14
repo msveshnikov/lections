@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> <%= full_title(yield(:title)) %> </title>
+  <title> Лекции и шпаргалки </title>
   <%= stylesheet_link_tag "mobile" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
@@ -12,13 +12,7 @@
 </head>
 <body>
 
-<%= link_to image_tag("topsmall.jpg", style: "width:100%;"), root_path %>
-<% if postinfo && cookies[:nopost]!="1" %>
-    <h4 class="box">
-      <a class="close"> <%= image_tag "close.png" %> </a>
-      <%= postinfo %>
-    </h4>
-<% end %>
+
 <ul class="breadcrumb">
   <%= render_breadcrumbs :tag => :li, :separator => "" %>
 </ul>
