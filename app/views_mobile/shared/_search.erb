@@ -1,0 +1,7 @@
+<%= form_tag(articles_path, :method => "get", id: "search-form") do %>
+    <div>
+      <br>
+      <%= text_field_tag :search, params[:search], id: "search-field", placeholder: "Понятие или предмет" %>
+      <button type="submit">Искать</button>
+    </div>
+<% end %>

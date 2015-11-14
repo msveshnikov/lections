@@ -1,8 +1,20 @@
 # encoding: utf-8
 class ArticlesController < ApplicationController
-  before_action :set_article
+  before_action :set_article, only: [:show, :edit, :update]
   before_action :check_for_mobile
 
+  # GET /articles
+  def index
+    add_breadcrumb 'МЕНЮ', :root_path
+    if params[:search]
+      @articles = Article.search(params[:search])
+      redirect_to articles_path(@articles[0]) if @articles.size == 1
+    else
+      @recipes = Article.all
+    end
+  end
+
+  # GET /article/id
   def show
     render file: "/public/material/"+@article.id+".html"
   end
