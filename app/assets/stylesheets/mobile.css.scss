@@ -1,0 +1,140 @@
+@import url('http://fonts.googleapis.com/css?family=Lobster');
+@import url('http://fonts.googleapis.com/css?family=Cuprum');
+
+body {
+  padding: 3px;
+  font-family: 'Cuprum', "Trebuchet MS", Helvetica, Arial, Helvetica, sans-serif-light, sans-serif;
+  font-size: 14pt;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-family: 'Lobster', Roboto, Georgia, serif ;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lobster', Georgia, serif;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: normal;
+  color: #791115;
+}
+
+h3 {
+  font-size: 1.0em;
+  color: #040200;
+}
+
+h4 {
+  font-size: 14pt;
+  font-weight: normal;
+  color: #000000;
+  background-color: #a2e5a4;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  line-height: 2.5;
+}
+
+p {
+  font-size: 1.0em;
+  //  text-align: justify;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #00008b;
+}
+
+.user {
+  color: #00008b;
+  font-weight: bold;
+}
+
+.image {
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  padding: 5px 15px;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d200d2;
+}
+
+a {
+  line-height: 1.5em;
+  color: #5b61ff;
+}
+
+/* forms */
+
+input, textarea, button, select {
+  width: 45%;
+  font-family: 'Cuprum', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.0em;
+  height: 40px;
+  margin: 5px;
+}
+
+#comment, #file {
+  width: 90%;
+}
+
+.breakoutr {
+  width: 75%;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #deb78d;
+  color: #000;
+  text-align: left;
+  line-height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.fav, .close {
+  float: right;
+}
+
+.hot {
+  float: left;
+}
+
+.thumb {
+  width: 50px;
+  max-height: 30px;
+}
+
+.recipe {
+  line-height: 2em;
+}
+
+.file_button_container, .file_button_container input {
+  height: 47px;
+  width: 47px;
+}
+
+.file_button_container {
+  background: transparent url(asset-path("cam.jpg")) left top no-repeat;
+}
+
+.file_button_container input {
+  opacity: 0;
+}
