@@ -11,17 +11,13 @@
 
 </head>
 <body>
-<%= link_to image_tag("topsmall.jpg"), root_path %>
+<%= link_to image_tag("topsmall.jpg", style: "width:100%;"), root_path %>
 
 <ul class="breadcrumb">
   <%= render_breadcrumbs :tag => :li, :separator => "" %>
 </ul>
 
 <%= yield %>
-
-<%= link_to "Jessika Blog", "http://jessika.tk", target: "_blank" unless android_device? %>
-<br>
-<%= link_to "Полная версия", mobile: 0 unless android_device? %>
 
 <% if !android_device? %>
     <div>

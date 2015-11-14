@@ -20,8 +20,11 @@ class CategoriesController < ApplicationController
   def set_category
     @category = Category.find(params[:id])
     @parent = Category.find(@category.parent) if @category.parent != "data2"
+    @megaparent = Category.find(@parent.parent) if @parent and @parent.parent != "data2"
     add_breadcrumb 'МЕНЮ', :root_path
+    add_breadcrumb @megaparent.title, @megaparent if @megaparent
     add_breadcrumb @parent.title, @parent if @parent
+    add_breadcrumb @category.title, @category if @category
   end
 end
 

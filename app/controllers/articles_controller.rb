@@ -13,7 +13,9 @@ class ArticlesController < ApplicationController
   def set_article
     @article = Article.find(params[:id])
     @parent = Category.find(@article.parent)
+    @megaparent = Category.find(@parent.parent) if @parent and @parent.parent != "data2"
     add_breadcrumb 'МЕНЮ', :root_path
+    add_breadcrumb @megaparent.title, @megaparent if @megaparent
     add_breadcrumb @parent.title, @parent if @parent
   end
 end
