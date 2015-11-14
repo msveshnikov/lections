@@ -1,0 +1,4 @@
+<% @categories.each do |category| %>
+            <h2><%= category.title %></h2>
+            <%= link_to category.title, category %>
+<% end %>
