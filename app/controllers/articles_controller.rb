@@ -17,5 +17,6 @@ class ArticlesController < ApplicationController
     add_breadcrumb 'МЕНЮ', :root_path
     add_breadcrumb @megaparent.title, @megaparent if @megaparent
     add_breadcrumb @parent.title, @parent if @parent
+    add_breadcrumb @article.title, @article
   end
 end
