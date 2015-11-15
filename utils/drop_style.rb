@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>require 'nokogiri'
+require 'nokogiri'
 
 Dir.foreach('.') do |item|
   next if item == '.' or item == '..'
@@ -11,4 +10,3 @@ Dir.foreach('.') do |item|
 end
 
 
-</p></body></html>

@@ -15,14 +15,14 @@ parsed["data"].each { |key, value|
         p parsed["data"][key]["mName"], parsed["data"][key]["mSubcategoriesList"]["size"]
 	  	parsed["data"][key]["mSubcategoriesList"]["data"].each do |shop|
  		  p "       "+shop["mName"]
- 		  csv2 << [shop["mId"],key,  shop["mName"],"20151010","20151010"]
+ 		  csv2 << [key, shop["mId"], shop["mName"]]
 		end
 	end
     if parsed["data"][key]["mMaterialsList"]["size"]>0
 	    p parsed["data"][key]["mName"], parsed["data"][key]["mMaterialsList"]["size"]
 	  	parsed["data"][key]["mMaterialsList"]["data"].each do |shop|
  		  p "            "+shop["mName"]
- 		  csv << [shop["mId"],key,  shop["mName"],"20151010","20151010"]
+ 		  csv << [key, shop["mId"], shop["mName"]]
 		end
 	end
 }
