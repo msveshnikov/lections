@@ -16,7 +16,21 @@ class ArticlesController < ApplicationController
 
   # GET /article/id
   def show
-    render file: "/public/material/"+@article.id+".html"
+    #render file: "/public/material/"+@article.id+".html"
+  end
+
+  def toggle
+    s = cookies[:fav]
+    s = '' if s.blank?
+    f = s.split(',')
+    if f.include? params[:id]
+      f.delete params[:id]
+      render text: 'heart-off.jpg'
+    else
+      f << params[:id]
+      render text: 'heart-on.jpg'
+    end
+    cookies.permanent[:fav] = f.join(',')
   end
 
   private

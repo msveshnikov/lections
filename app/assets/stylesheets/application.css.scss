@@ -20,7 +20,7 @@ h1 {
   font-family: 'Roboto Condensed', Times, serif;
   font-size: 3em;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
@@ -102,7 +102,7 @@ input, textarea, select, .uneditable-input {
 .breakoutr {
   width: 50%;
   padding: 10px;
-  margin-left: 10px;
+  margin: 10px;
   background-color: #deb78d;
   color: #000;
   text-align: left;
@@ -114,6 +114,8 @@ input, textarea, select, .uneditable-input {
 
 .fav, .close {
   float: right;
+  padding: 10px;
+  margin: 10px;
 }
 
 .hot {

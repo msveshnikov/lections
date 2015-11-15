@@ -1,10 +1,20 @@
 Поиск по всем лекциям:
 
 <%= render 'shared/search' %>
+
 <% cache "me" do %>
     <% @categories.each do |category| %>
         <h1>
           <%= link_to category.title, category %>
         </h1>
     <% end %>
+<% end %>
+
+<% if !getfavs.blank? %>
+    <%= image_tag "divider.png" %>
+    <h1>Избранные лекции</h1>
+    <% getfavs.each do |article| %>
+        <%= render Article.find(article) %>
+    <% end %>
+    <br>
 <% end %>
