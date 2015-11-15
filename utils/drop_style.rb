@@ -8,5 +8,3 @@ Dir.foreach('.') do |item|
   doc.xpath('//@style').remove
   File.write(item, doc)
 end
-
-

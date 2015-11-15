@@ -1,9 +1,10 @@
 Поиск по всем лекциям:
 
 <%= render 'shared/search' %>
-
-<% @categories.each do |category| %>
-    <h1>
-      <%= link_to category.title, category %>
-    </h1>
+<% cache "me" do %>
+    <% @categories.each do |category| %>
+        <h1>
+          <%= link_to category.title, category %>
+        </h1>
+    <% end %>
 <% end %>
