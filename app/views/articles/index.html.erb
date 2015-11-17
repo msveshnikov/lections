@@ -2,11 +2,7 @@
   Результаты поиска
 </h1>
 
-<% @articles.each do |article| %>
-    <h3>
-      <%= link_to article.title, article %>
-    </h3>
-<% end %>
+<%= render @articles %>
 
 <% if @articles.size==0 %>
     Не найдено

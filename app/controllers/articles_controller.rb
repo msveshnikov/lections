@@ -1,6 +1,6 @@
 # encoding: utf-8
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update]
+  before_action :set_article, only: [:show]
   before_action :check_for_mobile
 
   # GET /articles
@@ -10,13 +10,12 @@ class ArticlesController < ApplicationController
       @articles = Article.search(params[:search])
       redirect_to article_path(@articles[0]) if @articles.size == 1
     else
-      @recipes = Article.all
+      @articles = Article.all
     end
   end
 
   # GET /article/id
   def show
-    #render file: "/public/material/"+@article.id+".html"
   end
 
   def toggle

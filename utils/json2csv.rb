@@ -10,7 +10,7 @@ parsed = JSON.parse(json)
 CSV.open("myfile.csv", "w") do |csv|
   CSV.open("myfile2.csv", "w") do |csv2|
 
-    parsed["data"].each { |key, value|
+    parsed["data"].each { |key, _|
       if parsed["data"][key]["mSubcategoriesList"]["size"]>0
         p parsed["data"][key]["mName"], parsed["data"][key]["mSubcategoriesList"]["size"]
         parsed["data"][key]["mSubcategoriesList"]["data"].each do |shop|

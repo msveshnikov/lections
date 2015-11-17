@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  helper_method :mobile_device?, :android_device?, :current_user, :post_menu?
+  helper_method :mobile_device?, :android_device?, :current_user
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -28,11 +28,6 @@ class ApplicationController < ActionController::Base
 
   def android_device?
     (session[:mobile_override] == '2')
-  end
-
-  def post_menu?
-    session[:post] = params[:post] if params[:post]
-    session[:post] == '1'
   end
 
   def page(a)

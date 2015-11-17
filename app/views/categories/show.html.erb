@@ -5,9 +5,5 @@
         </h1>
     <% end %>
     <br>
-    <% @articles.each do |article| %>
-        <h3>
-          <%= link_to article.title, article %>
-        </h3>
-    <% end %>
+    <%= render @articles %>
 <% end %>
