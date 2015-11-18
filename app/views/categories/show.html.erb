@@ -1,9 +1,5 @@
 <% cache @category.id do %>
-    <% @categories.each do |category| %>
-        <h1>
-          <%= link_to category.title, category %>
-        </h1>
-    <% end %>
+    <%= render @categories %>
     <br>
     <%= render @articles %>
 <% end %>
