@@ -1,3 +1,5 @@
+<% provide(:title, @category.title) %>
+
 <% cache @category.id do %>
     <%= render @categories %>
     <br>

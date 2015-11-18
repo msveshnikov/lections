@@ -1,3 +1,5 @@
+<% provide(:title, @article.title) %>
+
 <%= link_to image_tag(getfav(@article.id),
                       title: "Добавить в избранное", class: "fav", id: @article.id) %>
 
