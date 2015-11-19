@@ -6,7 +6,7 @@ class Article < ActiveRecord::Base
     query.gsub!(/['"%\\]/, '')
     query.strip!
     query = 'zzzzzzzaaazzzzz' if query.blank?
-    where("title like '%#{query.mb_chars.downcase}%'")
+    where("low like '%#{query.mb_chars.downcase}%'")
   end
 
   def self.check
