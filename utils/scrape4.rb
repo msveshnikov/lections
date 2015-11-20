@@ -5,10 +5,10 @@ require 'csv'
 require 'unicode_utils'
 
 site = "http://www.rae.ru/monographs/51/"
-css  = ".text"
-cat  ="draw"
+css = ".text"
+cat ="draw"
 
-doc   = Nokogiri::HTML(open(site))
+doc = Nokogiri::HTML(open(site))
 links = doc.css(css).css("a")
 p links.length
 
@@ -17,7 +17,11 @@ CSV.open("myfile.csv", "w") do |csv|
 
     links.each { |link|
       p link.text
-      page = Nokogiri::HTML(open(site+link["href"]))
+      begin
+        page = Nokogiri::HTML(open("http://www.rae.ru/"+link["href"]))
+      rescue
+        next
+      end
       page.xpath('//@style').remove
       page.css("a").remove
       page.css(".postmetadata").remove
@@ -29,9 +33,10 @@ CSV.open("myfile.csv", "w") do |csv|
         #img['src']=site + img['src']
       end
       c =page.css(css).length
+      p page.css(css).to_s.length
       id=Digest::MD5.hexdigest(link["href"])
 
-      if c==0
+      if page.css(css).to_s.length<350
         csv2 << [id, cat, link.text, "20151120", "20151120"]
         cat=id
       else
