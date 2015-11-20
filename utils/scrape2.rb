@@ -21,6 +21,7 @@ CSV.open("myfile.csv", "w") do |csv|
       page.css(".nav").remove
       page.css(".adsbygoogle").remove
       page.css("script").remove
+      page.xpath('//comment()').remove
       page.search("img").each do |img|
         img['src']="http://abc.vvsu.ru/Books/l_matemk1/"+ img['src']
       end

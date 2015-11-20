@@ -21,6 +21,7 @@ CSV.open("myfile.csv", "w") do |csv|
       page.css(".navigation").remove
       page.css(".adsbygoogle").remove
       page.css("script").remove
+      page.xpath('//comment()').remove
       c=page.css(".post").length
       id=Digest::MD5.hexdigest(link["href"])
 
