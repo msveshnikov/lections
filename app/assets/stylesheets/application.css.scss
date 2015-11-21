@@ -25,11 +25,9 @@ h1 {
 
 h2 {
   font-family: 'Roboto Condensed', Times, serif;
-  font-size: 24px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  font-weight: normal;
-  color: #791115;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 h3 {
@@ -100,11 +98,10 @@ input, textarea, select, .uneditable-input {
 }
 
 .breakoutr {
-  width: 50%;
+  width: 70%;
   padding: 10px;
-  margin: 10px;
-  background-color: #deb78d;
-  color: #000;
+  background-color: #73de6a;
+  color: #5b61ff;
   text-align: left;
   line-height: 100%;
   border-radius: 10px;

@@ -3,7 +3,11 @@
 <%= render 'shared/search' %>
 
 <% cache "me" do %>
-    <%= render @categories %>
+    <% @categories.each_with_index do |category, i| %>
+        <h1 class="breakoutr" style='background-color:<%=my_color i %>'>
+          <%= link_to category.title, category %>
+        </h1>
+    <% end %>
 <% end %>
 
 <% if !getfavs.blank? %>

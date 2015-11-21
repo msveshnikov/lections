@@ -17,18 +17,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: 'Roboto Condensed', Roboto, Georgia, serif;
-  font-size: 1.3em;
-  margin-bottom: 30px;
+  font-size: 2.0em;
+  //margin-bottom: 30px;
   text-align: left;
 }
 
 h2 {
-  font-family: 'Roboto Condensed', Georgia, serif;
-  font-size: 1.2em;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  font-weight: normal;
-  color: #791115;
+  font-family: 'Roboto Condensed', Roboto, Georgia, serif;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 h3 {
@@ -97,13 +95,10 @@ input, textarea, button, select {
 }
 
 .breakoutr {
-  width: 75%;
-  padding: 10px;
-  margin-left: 10px;
-  background-color: #deb78d;
-  color: #000;
+  width: 95%;
+  padding: 5px;
+  background-color: #a2e5a4;
   text-align: left;
-  line-height: 100%;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
