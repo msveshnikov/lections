@@ -1,0 +1,80 @@
+# encoding: koi8-r
+<body>
+
+ 
+ 
+ 
+ 
+ 
+
+<b>  </b>  
+ <b>  </b>  
+ <b>  </b>  
+
+
+
+<h2></h2>
+<div class="text"> Рассмотрим следующий пример, когда из двух очень похожих вопросов
+на один можно ответить, пользуясь , а для другого
+этой формулы оказывается недостаточно.
+</div>
+<div class="example">
+<b>Пример 24. </b>
+Игральная кость подбрасывается пятнадцать раз. Найти вероятности
+следующих событий: а) выпадет ровно десять троек; б) выпадет ровно десять троек и три единицы.
+<p><b>Решение.</b>
+</p>
+<p>а) Есть пятнадцать испытаний  с вероятностью успеха 1/6 (здесь успех &#151; выпадение тройки). 
+Вероятность десяти успехов в пятнадцати испытаниях равна
+</p>
+<p class="CENTER"><img align="absmiddle" width="312" height="40" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img492.gif"></p>
+<p>б) Здесь каждое испытание имеет три, а не два исхода:
+выпадение тройки, выпадение единицы, выпадение остальных граней.
+Воспользоваться  для числа успехов в схеме Бернулли не удаётся &#151; перед нами уже не схема Бернулли.</p>
+</div>
+<div class="text">
+Осталось изобрести формулу для подсчёта вероятности каждому
+исходу в нескольких независимых испытаниях выпасть нужное число раз,
+если в одном испытании возможно не два, а более исходов.
+<p>Пусть в одном испытании возможны <img align="bottom" width="18" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img5.gif"> исходов: <img align="absmiddle" width="82" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img493.gif">,  
+и исход  <img align="bottom" width="8" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img54.gif"> в одном испытании
+случается с вероятностью <img align="absmiddle" width="17" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img96.gif">,   где <img align="absmiddle" width="135" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img494.gif">. 
+Обозначим через <img align="absmiddle" width="109" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img495.gif"> искомую вероятность того, что
+в <img align="absmiddle" width="140" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img496.gif">  исход 1 появился
+<img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img497.gif"> раз, 
+исход 2 &#151; <img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img499.gif"> раз, и т.д.,  исход  <img align="bottom" width="18" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img5.gif"> &#151; <img align="absmiddle" width="26" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img500.gif"> раз.</p>
+</div>
+<div class="teor">
+<b>Теорема 13. </b>
+Для любого <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> и любых целых <img align="absmiddle" width="52" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img501.gif">, ..., <img align="absmiddle" width="58" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img502.gif"> таких, что <img align="absmiddle" width="140" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img503.gif">, верна формула:
+<p class="CENTER"><img align="absmiddle" width="313" height="54" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img504.gif"></p>
+</div>
+<div class="proof">
+<b>Доказательство. </b>
+Рассмотрим один элементарный исход, благоприятствующий
+выпадению <img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img497.gif"> единиц, <img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img499.gif"> двоек, ...,  <img align="absmiddle" width="26" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img500.gif"> 
+раз <img align="bottom" width="18" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img5.gif">-ок:
+<p class="CENTER"><img align="absmiddle" width="242" height="44" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img505.gif"></p>
+<p>Это результат <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> экспериментов, когда все нужные исходы
+появились в некотором заранее заданом порядке. Вероятность
+такого результата <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif">  равна
+<img align="absmiddle" width="101" height="22" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img506.gif">. 
+</p>
+<p>Остальные благоприятные исходы отличаются лишь расположением
+чисел <img align="absmiddle" width="82" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img507.gif"> на <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> местах. Число таких исходов
+равно числу способов расставить на <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> местах <img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img497.gif"> единиц, <img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img499.gif"> двоек, ..., <img align="absmiddle" width="26" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img500.gif"> чисел <img align="absmiddle" width="18" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img5.gif">,   т.е. 
+</p>
+<p class="CENTER"><img align="absmiddle" width="439" height="54" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img508.gif">
+</p>
+<p class="qed">QED</p>
+</div>
+<div class="text">Теперь мы можем вернуться к 
+и выписать ответ: так как вероятности выпадения тройки и единицы
+равны по 1/6, а вероятность третьего исхода (выпали любые другие грани)
+равна 4/6, то вероятность получить десять троек, три единицы и ещё
+два других очка равна
+<p class="CENTER"><img align="absmiddle" width="285" height="44" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img510.gif"></p>
+</div>
+<p>
+</p>
+</body>

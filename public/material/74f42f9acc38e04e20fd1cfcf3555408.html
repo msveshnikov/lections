@@ -1,0 +1,144 @@
+# encoding: koi8-r
+<body>
+
+ 
+ 
+ 
+ 
+ 
+
+<b>  </b>  
+ <b>  </b>  
+ <b>  </b>  
+
+
+
+<h2></h2>
+<div class="example">
+<b>Пример 57. </b>
+  
+Задача из .
+Монета подбрасывается 10000 раз. Оценим вероятность того, что
+частота выпадения герба отличается от половины на одну сотую или более.
+<p><b>Решение. </b>  Требуется найти 
+<img align="absmiddle" width="163" height="45" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1469.gif">,  
+где <img align="absmiddle" width="80" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1559.gif">,   <img align="absmiddle" width="181" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1560.gif"> &#151; число выпадений герба, а 
+<img align="absmiddle" width="16" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1168.gif"> &#151;  , имеющие одно и то же 
+с параметром 1/2.   Вычислим вероятность  события. Домножим обе части
+неравенства под знаком вероятности на <img align="absmiddle" width="77" height="22" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1561.gif"> и поделим на корень из
+ <img align="absmiddle" width="94" height="22" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1562.gif">.   </p>
+<p class="CENTER">
+<img align="absmiddle" width="515" height="118" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1563.gif"></p>
+<p> 
+Искомая вероятность <i class="incide">примерно</i> равна 0,0456: 
+</p>
+<p class="CENTER"><img align="absmiddle" width="447" height="57" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1565.gif"></p>
+</div>
+<div class="text">
+ пользуются для приближённого вычисления
+вероятностей, связанных с суммами большого числа  и  
+величин. При этом распределение центрированной и нормированной  суммы 
+заменяют на . 
+Насколько велика ошибка при такой замене (погрешность приближения)?
+</div>
+<div class="exer">
+<b>Упражнение 54. </b>
+Какие ещё предельные теоремы для  вы знаете? Что такое теорема
+Пуассона? Найти её. Какова погрешность пуассоновского приближения? Вычислить
+её. Объяснить, исходя из полученной величины, почему 
+не применима в задаче из .</div>
+<div class="text">
+В  мы вычислили искомую вероятность тоже не точно, а
+приближённо &#151; взгляните на равенство &#171;<img align="absmiddle" width="16" height="13" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1566.gif">&#187;
+и спросите себя: насколько мы ошиблись? Стоит ли доверять ответу
+&#171;0,0456&#187;? 
+Следующий результат позволяет оценить погрешность приближения в ЦПТ.
+</div>
+<div class="teor">
+<b>Теорема 39</b>   <b>(неравенство Берри &#151; Эссеена).  </b>
+
+В условиях  для любого <img align="bottom" width="46" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img624.gif"> и для любого распределения <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif">
+<p class="CENTER"><img align="absmiddle" width="423" height="65" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1567.gif"></p>
+</div>
+<div class="remark">
+<b>Замечание 28. </b>
+Про постоянную <img align="bottom" width="16" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img419.gif"> известно, что:
+<p>а) в общем случае <img align="bottom" width="16" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img419.gif"> не превышает 0,7655, 
+</p>
+<p>б) погрешность приближения наиболее велика, если слагаемые <img align="absmiddle" width="16" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1168.gif"> имеют . Как показывают численные расчёты,
+даже в этом случае можно смело брать в качестве <img align="bottom" width="16" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img419.gif"> 
+число 0,4, особенно при малых <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif">, когда и это значение постоянной даёт слишком грубую оценку.
+</p>
+<p>Подробный обзор можно найти в монографии В.М.Золотарева
+&#171;Современная теория суммирования независимых случайных величин&#187;,  стр. 264-291.</p>
+</div>
+<div class="example">
+Продолжение .  Проверьте, что для случайной величины
+<img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif"> с  
+<p class="CENTER"><img align="absmiddle" width="512" height="29" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1570.gif"></p>
+<p>Поэтому разница между левой и правой частями приближённого
+равенства &#171;<img align="absmiddle" width="16" height="13" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1566.gif">&#187; в примере  
+при <img align="bottom" width="61" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1470.gif"> и <img align="absmiddle" width="92" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1571.gif"> не превышает величины
+</p>
+<p class="CENTER"><img align="absmiddle" width="393" height="64" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1572.gif"></p>
+<p>так что искомая вероятность 
+<img align="absmiddle" width="163" height="45" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1469.gif"> не больше, чем 0,0456 + 0,004.  
+Уместно сравнить этот ответ с оценкой, полученной с помощью ЗБЧ
+в .</p>
+</div>
+<div class="text">Следующая проблема связана с распространённейшим среди  
+заблуждением, которое выглядит так: при <img align="absmiddle" width="57" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img308.gif">
+<p class="CENTER"><img align="absmiddle" width="276" height="57" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1574.gif"></p>
+<p> 
+но уже
+</p>
+<p class="CENTER"><img align="absmiddle" width="275" height="57" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1575.gif"></p>
+</div>
+<div class="example">
+<b>Пример 58. </b> 
+Пусть <img align="absmiddle" width="69" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1550.gif"> &#151; 
+ и   
+с конечной и   <img align="absmiddle" width="71" height="22" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1576.gif">,   <img align="absmiddle" width="140" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1577.gif"> &#151; сумма первых <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> случайных величин. При каких <img align="bottom" width="10" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img652.gif"> имеет или не имеет место
+сходимость 
+<p class="CENTER"><img align="absmiddle" width="212" height="57" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1578.gif"></p>
+<p><b>Решение. </b>  
+Согласно , последовательность <img align="absmiddle" width="45" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1579.gif"> ,
+а, , и , к <img align="absmiddle" width="28" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1443.gif">. </p>
+<p> означает, что последовательность 
+<img align="absmiddle" width="168" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1580.gif"> сходится к 
+<img align="absmiddle" width="144" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1581.gif">,   если <img align="absmiddle" width="40" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1582.gif"> непрерывна
+в точке <img align="bottom" width="10" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img652.gif"> (<font class="first">и ничего не означает</font>, если <img align="absmiddle" width="40" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1582.gif"> разрывна в точке <img align="bottom" width="10" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img652.gif">). Но 
+</p>
+<p class="CENTER"><img align="absmiddle" width="271" height="67" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1583.gif"></p>
+<p>
+есть функция распределения  закона и непрерывна
+в любой точке <img align="bottom" width="10" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img652.gif">,  кроме <img align="absmiddle" width="59" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1584.gif">. </p>
+<p>Итак, первый вывод: сходимость 
+<img align="absmiddle" width="215" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1585.gif"> 
+имеет место  <i class="incide">для любого</i> <img align="bottom" width="10" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img652.gif">,   <font class="first">кроме, возможно</font>, <img align="absmiddle" width="59" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1584.gif">. </p>
+<p>Убедимся, что для <img align="absmiddle" width="59" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1584.gif"> такой сходимости быть не может.
+Согласно ЦПТ, 
+</p>
+<p class="CENTER"><img align="absmiddle" width="446" height="57" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1586.gif"></p>
+<p>тогда как <img align="absmiddle" width="186" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1587.gif">.  
+Аналогично, кстати, ведёт себя и вероятность
+<img align="absmiddle" width="122" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1588.gif">.  Она тоже стремится к 1/2,     
+а не к <img align="absmiddle" width="137" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1589.gif">.   </p>
+</div>
+<div class="text">
+И изящное упражнение на ту же тему:</div>
+<div class="exer">
+<b>Упражнение 55. </b>
+ Доказать, что 
+<p class="CENTER"><img align="absmiddle" width="315" height="212" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1590.gif"></p>
+<p>
+Указание.  Каждый из интегралов равен значению в некоторой точке 
+функции распределения суммы независимых случайных величин с каким-то показательным распределением.
+Вспомнить, что такое  
+и что такое .</p>
+</div>
+<p>
+</p>
+<p>
+</p>
+</body>

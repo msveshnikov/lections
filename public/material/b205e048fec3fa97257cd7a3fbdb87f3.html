@@ -1,0 +1,133 @@
+# encoding: koi8-r
+<body>
+
+ 
+ 
+ 
+ 
+ 
+
+<b>  </b>  
+ <b>  </b>  
+ <b>  </b>  
+
+
+
+<h2></h2>
+<div class="text">Ограничимся рассмотрением двух типичных случаев: когда совместное
+распределение координат случайного вектора <img align="absmiddle" width="54" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img875.gif"> либо дискретно, либо абсолютно непрерывно. Заметим, что сингулярные совместные 
+распределения тоже не являются редкостью, в отличие от одномерного случая:
+стоит бросить точку наудачу на отрезок на плоскости, и мы получим 
+сингулярное совместное распределение (<small class="quest">доказать</small>).</div>
+<p></p>
+<h3></h3>
+<div class="lemma">
+<b>Определение 35. </b>
+Говорят, что случайные величины <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif">, <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif"> имеют <i class="incide">дискретное</i> совместное распределение,
+если существует конечный или счётный набор чисел <img align="absmiddle" width="57" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img892.gif"> такой, что 
+<p class="CENTER"><img align="absmiddle" width="233" height="69" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img893.gif"></p>
+<p>Таблицу, на пересечении
+<img align="absmiddle" width="8" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img54.gif">-й строки и <img align="absmiddle" width="11" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img68.gif">-го столбца которой стоит
+вероятность <img align="absmiddle" width="146" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img894.gif">,   называют
+<i class="incide">таблицей совместного распределения</i> случайных величин
+<img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif"> и <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif">.  </p>
+</div>
+<div class="text">Таблицы распределения каждой из случайных величин
+<img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif">,   <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif"> в отдельности (таблицы <i class="incide">частных</i>,
+или <i class="incide">маргинальных распределений</i>) восстанавливаются по таблице совместного
+распределения с помощью формул:
+<p class="CENTER"><img align="absmiddle" width="562" height="59" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img895.gif"></p>
+<p>Так, первое равенство следует из того, что набор 
+<img align="absmiddle" width="73" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img896.gif">, <img align="absmiddle" width="73" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img897.gif">, ...   есть полная группа событий,
+и поэтому событие <img align="absmiddle" width="73" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img898.gif"> раскладывается в объединение  
+событий:
+</p>
+<p class="CENTER"><img align="absmiddle" width="251" height="69" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img899.gif"></p>
+</div>
+<h3></h3>
+<div class="lemma">
+<b>Определение 36. </b>
+Говорят, что случайные величины <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif">,   
+<img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif"> 
+имеют <i class="incide">абсолютно непрерывное</i> совместное распределение,
+если существует неотрицательная функция <img align="absmiddle" width="96" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img900.gif"> такая, что для любого множества <img align="absmiddle" width="87" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img901.gif"> имеет место равенство
+<p class="CENTER"><img align="absmiddle" width="302" height="67" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img902.gif"></p>
+<p>Если такая функция <img align="absmiddle" width="96" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img900.gif"> существует, она называется
+<i class="incide">плотностью совместного распределения</i> случайных величин
+<img align="absmiddle" width="41" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img903.gif">.  </p>
+</div>
+<div class="text">
+<img class="right" width="147" height="96" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img904.gif">
+Достаточно, если двойной интеграл по множеству <img align="bottom" width="17" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img4.gif"> читатель будет понимать
+как объём области под графиком функции <img align="absmiddle" width="96" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img900.gif"> над множеством <img align="bottom" width="17" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img4.gif"> в плоскости переменных <img align="absmiddle" width="59" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img879.gif">,   как показано на рисунке справа.
+<p>Если случайные величины <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif">,   <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif"> имеют абсолютно непрерывное совместное распределение,
+то для любых <img align="absmiddle" width="45" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img876.gif"> имеет место равенство:
+</p>
+<p class="CENTER"><img align="absmiddle" width="523" height="69" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img905.gif"></p>
+<p>Плотность совместного распределения обладает  свойствами, как
+и плотность распределения одной случайной величины:
+</p>
+<p></p>
+<dl compact>
+<p></p>
+<dt>
+<b>(f1)</b>
+</dt>
+<dd> <i class="incide">Неотрицательность:</i> 
+<img align="absmiddle" width="128" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img906.gif"> 
+для любых <img align="absmiddle" width="79" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img907.gif">; 
+<p></p>
+</dd>
+<dt>
+<b>(f2)</b>
+</dt>
+<dd> <i class="incide">Нормированность:</i> 
+<img align="absmiddle" width="219" height="57" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img908.gif">.  
+</dd>
+</dl>
+<p>Справедливо и обратное: любая функция, обладающая этими свойствами, является плотностью
+некоторого совместного распределения. Доказательство этого факта ничем не 
+отличается от .
+</p>
+<p>По функции совместного распределения его плотность находится как
+смешанная частная производная:
+</p>
+<dl compact>
+<p></p>
+<dt>
+<b>(f3)</b>
+</dt>
+<dd> <img align="absmiddle" width="275" height="44" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img909.gif"> для  <img align="absmiddle" width="59" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img879.gif">.  
+</dd>
+</dl>
+<p>Из существования плотностей <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif"> и <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif"> <i class="incide">не следует</i> абсолютная непрерывность
+совместного распределения этих случайных величин. Например, вектор <img align="absmiddle" width="39" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img910.gif"> принимает значения только на диагонали в <img align="absmiddle" width="22" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img264.gif"> и уже поэтому не имеет плотности
+совместного распределения (его совместное распределение сингулярно). 
+</p>
+<p>Обратное же свойство, как показывает следующая теорема,  всегда верно: если совместное распределение абсолютно непрерывно,
+то и частные распределения тоже таковы. 
+</p>
+</div>
+<div class="teor">
+<b>Теорема 27. </b>
+Если случайные величины <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif"> и <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif"> имеют абсолютно непрерывное
+совместное распределение с плотностью <img align="absmiddle" width="69" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img911.gif">,  
+то <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img630.gif"> и <img align="absmiddle" width="18" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img631.gif"> в отдельности также имеют  распределение с плотностями:
+<p class="CENTER"><img align="absmiddle" width="405" height="78" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img912.gif"></p>
+</div>
+<div class="text">
+Для <img align="absmiddle" width="45" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img913.gif"> плотности случайных величин <img align="absmiddle" width="73" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img874.gif"> по
+плотности их совместного распределения <img align="absmiddle" width="102" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img914.gif"> 
+находятся интегрированием функции <img align="absmiddle" width="13" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img566.gif"> по всем &#171;лишним&#187; координатам.
+<div class="proof">
+<b>Доказательство.</b>
+Например, в силу равенств ,
+<p class="CENTER"><img align="absmiddle" width="544" height="69" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img915.gif"></p>
+<p>Аналогично устанавливается и справедливость второго равенства.
+</p>
+<p class="qed">QED</p>
+</div>
+<p>
+</p>
+</div>
+</body>

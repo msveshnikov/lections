@@ -1,0 +1,342 @@
+# encoding: koi8-r
+<body>
+
+ 
+ 
+ 
+ 
+ 
+
+<b>  </b>  
+ <b>  </b>  
+ <b>  </b>  
+
+
+
+<h2></h2>
+<div class="text">Напомню, что  есть ()
+функция из некоторого абстрактного множества <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img61.gif"> в множество действительных чисел.
+Последовательность случайных величин  <img align="absmiddle" width="63" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1319.gif"> есть, тем самым, последовательность
+<i class="incide">функций</i>, определённых на одном и том же пространстве элементарных
+исходов <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img61.gif">. 
+Существуют разные виды сходимости последовательности функций. Всякий раз давать определение какой-либо сходимости мы будем,
+опираясь на <i class="incide">сходимость числовых последовательностей</i> как на уже известное основное понятие.
+<p>В частности, при каждом новом <img align="absmiddle" width="47" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1320.gif"> мы имеем новую числовую последовательность
+<img align="absmiddle" width="168" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1321.gif">. Поэтому, во-первых, можно говорить о знакомой из математического анализа
+(почти) поточечной сходимости последовательностей функций:
+о сходимости <i class="incide">&#171;почти всюду&#187;</i>, которую в теории
+вероятностей называют сходимостью <i class="incide">&#171;почти наверное&#187;</i>.
+</p>
+</div>
+<div class="lemma">
+<b>Определение 49. </b>
+
+Говорят, что последовательность <img align="absmiddle" width="37" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1322.gif"> <i class="incide">сходится
+почти наверное</i> к случайной величине <img align="absmiddle" width="10" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img155.gif"> при <img align="bottom" width="57" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img308.gif">, и пишут: <img align="absmiddle" width="54" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1323.gif"> п.н., если <img align="absmiddle" width="298" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1324.gif">.  
+Иначе говоря, если <img align="absmiddle" width="103" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1325.gif"> при <img align="bottom" width="57" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img308.gif"> для всех <img align="absmiddle" width="47" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1320.gif">, кроме, возможно, <img align="absmiddle" width="48" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1326.gif">, где <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1.gif"> &#151; событие нулевой вероятности.</div>
+<div class="text">
+Заметим сразу: чтобы говорить о сходимости &#171;почти наверное&#187;,
+требуется (по крайней мере, по определению) знать, как устроены
+отображения <img align="absmiddle" width="81" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1327.gif">. В задачах же теории
+вероятностей, как правило, известны не сами , а
+лишь их .
+<p>Можем ли мы, обладая только информацией о ,
+говорить о какой-либо сходимости последовательности  <img align="absmiddle" width="37" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1322.gif"> к случайной величине <img align="absmiddle" width="10" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img155.gif">?
+</p>
+<p>Можно, например, потребовать, чтобы вероятность тех
+ <img align="absmiddle" width="13" height="16" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img62.gif">, для которых <img align="absmiddle" width="43" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1328.gif"> не попадает
+в &#171;<img align="bottom" width="11" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1329.gif">-окрестность&#187; числа <img align="absmiddle" width="34" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img565.gif">, уменьшалась до нуля с ростом <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif">. Такая сходимость в функциональном анализе называется
+сходимостью &#171;по мере&#187;, а в теории вероятностей &#151;
+сходимостью <i class="incide">&#171;по вероятности&#187;</i>.
+</p>
+</div>
+<div class="lemma">
+<b>Определение 50. </b>
+
+Говорят, что последовательность случайных величин <img align="absmiddle" width="37" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1322.gif"> <i class="incide">сходится
+по вероятности</i> к случайной величине <img align="absmiddle" width="10" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img155.gif"> при <img align="bottom" width="57" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img308.gif">, и пишут: 
+<img align="absmiddle" width="65" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1330.gif">, 
+если для любого <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1331.gif">
+<p class="CENTER"><img align="absmiddle" width="550" height="29" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1332.gif"></p>
+</div>
+<div class="example">
+<b>Пример 54. </b>
+Рассмотрим последовательность <img align="absmiddle" width="72" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1222.gif">, в которой
+все величины имеют разные распределения: величина <img align="absmiddle" width="19" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img871.gif"> принимает значения 0 и <img align="bottom" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1333.gif"> с вероятностями
+<p class="CENTER"><img align="absmiddle" width="265" height="41" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1334.gif"></p>
+<p> 
+Докажем, что эта последовательность сходится по вероятности к нулю.
+</p>
+<p>Зафиксируем произвольное <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1331.gif">. Для
+всех <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif">, начиная с некоторого <img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1335.gif"> такого, что <img align="absmiddle" width="52" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1336.gif">,  
+верно равенство <img align="absmiddle" width="233" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1337.gif">. 
+Поэтому </p>
+<p class="CENTER"><img align="absmiddle" width="516" height="40" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1338.gif"></p>
+<p>Итак, случайные величины <img align="absmiddle" width="19" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img871.gif"> с ростом <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> могут принимать всё большие и большие значения,
+но со всё меньшей и меньшей вероятностью.
+</p>
+<p>Например, последовательность <img align="absmiddle" width="37" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1322.gif"> можно задать на 
+ <img align="absmiddle" width="239" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1339.gif"> так:</p>
+<p class="center">
+<img align="absmiddle" width="450" height="172" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1340.gif"></p>
+<p>А именно, положим <img align="absmiddle" width="75" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1341.gif"> для <img align="absmiddle" width="119" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1342.gif"> и <img align="absmiddle" width="85" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1343.gif"> для <img align="absmiddle" width="121" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1344.gif">.  
+Заметим, что в данном случае (сходимости к постоянной) сходимость по вероятности имеет место совершенно независимо 
+от того, как именно заданы  на <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img61.gif">, поскольку определяется лишь их .</p>
+</div>
+<div class="remark">
+<b>Замечание 23. </b>
+Иное дело &#151; сходимость &#171;почти наверное&#187;.
+Если, скажем, задать случайные величины как показано на графиках,
+то сходимость   будет иметь место. 
+Действительно, для всякого <img align="absmiddle" width="71" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1345.gif"> найдётся такое <img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1335.gif">,  что 
+<img align="absmiddle" width="126" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1346.gif">,  и поэтому 
+для всех <img align="absmiddle" width="54" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1347.gif">  все <img align="absmiddle" width="43" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1328.gif"> равны нулю.
+<p>Можно попробовать задать  <img align="absmiddle" width="19" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img871.gif"> на [0, 1] как-нибудь
+иначе, чтобы <i class="incide">не было</i> сходимости . Для этого нужно заставить
+отрезок длины <img align="absmiddle" width="30" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1348.gif">, на котором <img align="absmiddle" width="85" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1343.gif">, &#171;бегать&#187; по
+отрезку [0, 1], чтобы любая точка <img align="absmiddle" width="75" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1349.gif"> попадала внутрь этого
+отрезка бесконечное число раз, и, тем самым, для любого <img align="absmiddle" width="13" height="16" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img62.gif"> 
+существовала подпоследовательность <img align="absmiddle" width="95" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1350.gif">. 
+</p>
+<p>Однако заметим, что если вероятности <img align="absmiddle" width="85" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1351.gif"> сходятся к нулю достаточно быстро
+(например, равны <img align="absmiddle" width="38" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1352.gif"> &#151; чтобы ряд из них сходился), то сходимость  п.н. к нулю всегда имеет место
+(см. теорему  2 &#167;1 гл.6 на стр. 134
+учебника А.А.Боровкова &#171;Теория вероятностей&#187;).</p>
+</div>
+<div class="text">
+ не обязательно сопровождается сходимостью
+ или  других порядков:
+из <img align="absmiddle" width="65" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1330.gif"> не следует, что
+<img align="absmiddle" width="75" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1353.gif">.  
+Действительно,
+в  имеет место сходимость <img align="absmiddle" width="97" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1354.gif">,  
+но <img align="absmiddle" width="148" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1355.gif">. При этом вообще последовательность
+<img align="absmiddle" width="30" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1356.gif"> неограниченно возрастает.
+<p>А если вместо значения
+<img align="absmiddle" width="20" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1333.gif"> взять <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> (с той же вероятностью <img align="absmiddle" width="31" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1357.gif">),
+то получим <img align="absmiddle" width="139" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1358.gif">. Но теперь хотя бы предел у
+последовательности математических ожиданий конечен.
+</p>
+<p>Если же <img align="absmiddle" width="19" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img871.gif"> принимает значения 0 и <img align="absmiddle" width="27" height="22" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1359.gif"> с теми же вероятностями,
+что и в примере , то
+<img align="absmiddle" width="172" height="21" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1360.gif">, но уже 
+сходиться ко второму моменту <img align="absmiddle" width="10" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img155.gif"> не будут:
+<img align="absmiddle" width="146" height="22" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1361.gif">. </p>
+<p> обладает обычными свойствами пределов числовых 
+последовательностей &#151; например, такими:</p>
+</div>
+<div class="corollary">
+<b>Свойство 16. </b>
+
+Если <img align="absmiddle" width="65" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1330.gif"> и <img align="absmiddle" width="68" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1362.gif">, то:
+<p>
+<b>1.</b>  <img align="absmiddle" width="135" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1363.gif">; </p>
+<p>
+<b>2.</b>  <img align="absmiddle" width="118" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1364.gif">.  </p>
+</div>
+<div class="proof">
+<b>Доказательство. </b>
+При первом прочтении его можно пропустить.
+<p>
+<b>1.</b>   В доказательстве мы будем пользоваться свойством 
+: если из события <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1.gif"> следует событие <img align="bottom" width="17" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img4.gif"> (<img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1.gif">  <img align="bottom" width="17" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img4.gif">), то вероятность  <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1.gif"> не превосходит вероятности <img align="bottom" width="17" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img4.gif">:  если  <img align="absmiddle" width="53" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img91.gif">,  то  <img align="absmiddle" width="102" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img106.gif">. 
+</p>
+<p>Остановимся и ответим на следующие &#171;глупые вопросы&#187;. Верно ли, что:
+</p>
+<p><small>  а) модуль суммы не превосходит суммы модулей?
+  б) если <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1365.gif"> и <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1366.gif">, то <img align="absmiddle" width="41" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1367.gif">?
+  в) если <img align="absmiddle" width="72" height="16" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1368.gif">, то хоть одно из чисел <img align="absmiddle" width="27" height="18" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1369.gif"> больше единицы?
+  г) вероятность  событий 
+суммы их вероятностей?
+  д) вероятность  событий 
+вероятности каждого?</small>
+</p>
+<p>Если на все вопросы вы ответили &#171;да&#187;, можно двигаться дальше.
+Если не на все &#151; ваш контрпример ошибочен. Если вы вообще не поняли,
+о чём это, лучше вернуться к началу курса.
+</p>
+<p>Докажем, что для  
+предел суммы равен сумме пределов. Зафиксируем <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1331.gif">.  
+Требуется доказать, что <img align="absmiddle" width="220" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1370.gif"> при <img align="bottom" width="57" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img308.gif">. Но (ср. с вопросами выше): 
+</p>
+<p class="CENTER"><img align="absmiddle" width="289" height="46" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1371.gif"></p>
+<p>поэтому
+</p>
+<p class="CENTER"><img align="absmiddle" width="608" height="36" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1372.gif"></p>
+<p>Тогда по свойству  
+</p>
+<p class="CENTER"><img align="absmiddle" width="563" height="75" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1373.gif"></p>
+<p>при <img align="bottom" width="57" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img308.gif"> в силу того, что <img align="absmiddle" width="65" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1330.gif"> и <img align="absmiddle" width="68" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1362.gif">. </p>
+<p> 
+<b>2.</b>  Для доказательства второго утверждения 
+нам понадобится, кроме положительных ответов на &#171;глупые вопросы&#187; (а)-(д), 
+следующее &#171;хорошее свойство&#187;: для любой случайной
+величины <img align="absmiddle" width="10" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1374.gif">, согласно свойству  функций распределения, 
+вероятность <img align="absmiddle" width="86" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1375.gif"> стремится к нулю при <img align="bottom" width="66" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1376.gif">. 
+</p>
+<p>Представим <img align="absmiddle" width="86" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1377.gif"> как
+<img align="absmiddle" width="316" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1378.gif">.  
+Затем получим из (а) и монотонности вероятности, что
+</p>
+<p class="CENTER"><img align="absmiddle" width="565" height="57" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1379.gif">
+</p>
+<p>Подумайте, что делать с первым слагаемым в правой части, а мы пока
+рассмотрим второе слагаемое (третье ничем принципиально 
+от второго не отличается). Обозначим
+через <img align="absmiddle" width="190" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1380.gif"> 
+событие под знаком второй вероятности. Зафиксируем некоторое <img align="absmiddle" width="53" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1381.gif"> и разобьем событие <img align="absmiddle" width="24" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img184.gif"> по полной группе событий
+<img align="absmiddle" width="117" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1382.gif"> и <img align="absmiddle" width="117" height="23" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1383.gif">: 
+</p>
+<p class="CENTER"><img align="absmiddle" width="474" height="41" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1384.gif">
+</p>
+<p>Первую вероятность оцениваем в соответствии с вопросом (д),
+вторую &#151; пользуясь тем, что из неравенств 
+<img align="absmiddle" width="129" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1385.gif"> и <img align="absmiddle" width="62" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1386.gif">  неравенство
+<img align="absmiddle" width="131" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1387.gif">. Получаем:
+</p>
+<p class="CENTER"><img align="absmiddle" width="565" height="37" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1388.gif">
+</p>
+<p>Осталось для любого фиксированного <img align="absmiddle" width="53" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1381.gif"> устремить <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif"> к бесконечности, получив для верхнего предела оценку
+<img align="absmiddle" width="195" height="32" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1389.gif">,  после чего мы можем устремить к бесконечности <img align="bottom" width="21" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1390.gif">,  пользуясь &#171;хорошим свойством&#187;.
+</p>
+<p class="qed">QED</p>
+</div>
+<div class="text">, так же как и любая другая сходимость,
+не портится под действием непрерывной функции.</div>
+<div class="corollary">
+<b>Свойство 17. </b>
+ 
+<p>
+<b>1.</b> Если <img align="absmiddle" width="65" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1330.gif"> и <img align="absmiddle" width="35" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1391.gif"> &#151; непрерывная функция,
+то <img align="absmiddle" width="110" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1392.gif">. </p>
+<p>
+<b>2.</b> Если <img align="absmiddle" width="64" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1393.gif"> и <img align="absmiddle" width="35" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1391.gif"> непрерывна в точке <img align="absmiddle" width="10" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img652.gif">,  
+то <img align="absmiddle" width="109" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1394.gif">.  </p>
+</div>
+<div class="proof">
+<b>Доказательство. </b>
+Простое доказательство первого утверждения можно предложить
+в двух случаях, которыми мы и ограничимся:
+если <img align="absmiddle" width="104" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1395.gif"> (и тогда достаточно, чтобы
+<img align="absmiddle" width="11" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img821.gif"> была непрерывна в точке <img align="absmiddle" width="10" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img652.gif">) или если функция <img align="absmiddle" width="11" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img821.gif"> равномерно непрерывна  (<small class="quest">а что это значит?</small>).
+<p>И в том, и в другом случае для любого <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1331.gif"> найдётся такое <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1396.gif">, что для любого <img align="absmiddle" width="13" height="16" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img62.gif">, удовлетворяющего условию <img align="absmiddle" width="137" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1397.gif">, выполняется неравенство
+<img align="absmiddle" width="183" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1398.gif">. 
+</p>
+<p>Т.е.  <img align="absmiddle" width="109" height="24" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1399.gif">  
+<img align="absmiddle" width="203" height="24" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1400.gif">.  
+, вероятность первого не больше, чем вероятность второго.
+Но, какое бы ни было  <img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1396.gif">, вероятность первого события
+стремится к единице  сходимости по вероятности:
+</p>
+<p class="CENTER"><img align="absmiddle" width="425" height="54" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1401.gif">
+</p>
+<p>Следовательно, вероятность второго события также стремится к единице.
+</p>
+<p class="qed">QED</p>
+</div>
+<div class="text"><small class="quest">Предлагаю поразмышлять над тем, как доказывать первую часть 
+в общем случае.</small></div>
+<div class="text"> сильнее .</div>
+<div class="corollary">
+<b>Свойство 18. </b>
+Если <img align="absmiddle" width="54" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1323.gif"> 
+п. н., то  <img align="absmiddle" width="65" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1330.gif">.  </div>
+<div class="proof">
+<b>Доказательство. </b>
+При первом прочтении его можно пропустить.
+<p>Ограничимся для простоты случаем, когда <img align="absmiddle" width="103" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1325.gif"> для любого 
+<img align="absmiddle" width="47" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1320.gif">. </p>
+<p>Зафиксируем <img align="absmiddle" width="47" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1320.gif">. 
+По определению предела, <img align="absmiddle" width="103" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1325.gif"> при <img align="bottom" width="57" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img308.gif">, если для всякого 
+<img align="absmiddle" width="42" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1331.gif"> найдётся <img align="absmiddle" width="130" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1402.gif"> такое, что для всех <img align="absmiddle" width="52" height="15" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1403.gif"> выполняется
+неравенство <img align="absmiddle" width="138" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1404.gif">. Ничто не мешает нам дополнительно 
+потребовать, чтобы <img align="absmiddle" width="110" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1405.gif"> было не меньше, чем <img align="bottom" width="11" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1329.gif">, т.е. чтобы среди всех возможных
+<img align="absmiddle" width="59" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1406.gif"> мы заранее выбрали наименьшее (примем <img align="absmiddle" width="50" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1407.gif">, если <img align="absmiddle" width="138" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1404.gif"> при всех <img align="absmiddle" width="45" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1408.gif">).
+</p>
+<p>Итак,  <img align="absmiddle" width="146" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1409.gif">  
+<img align="absmiddle" width="192" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1410.gif">. 
+Но тогда 
+</p>
+<p class="CENTER"><img align="absmiddle" width="501" height="31" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1411.gif"></p>
+<p>по свойству  функций распределения. Тогда и <img align="absmiddle" width="227" height="24" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1412.gif"> стремится к единице. В силу 
+произвольности выбора <img align="bottom" width="11" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1329.gif">, это означает сходимость <img align="absmiddle" width="65" height="27" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1330.gif">. 
+</p>
+<p>Осталось только проверить, является ли <img align="absmiddle" width="146" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1409.gif"> , т.е. является ли 
+ при каждом <img align="bottom" width="11" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1329.gif"> функция <img align="absmiddle" width="59" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1406.gif">  отображением из <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img61.gif"> в <img align="bottom" width="15" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img236.gif">. 
+Для этого достаточно установить, что <img align="absmiddle" width="110" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1413.gif"> &#151; .
+Имеем при <img align="absmiddle" width="45" height="17" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1408.gif">:  
+</p>
+<p class="CENTER"><img align="absmiddle" width="552" height="58" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1414.gif"></p>
+<p>поскольку <img align="absmiddle" width="106" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1415.gif"> &#151; случайная величина. 
+При <img align="absmiddle" width="45" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1416.gif"> первый сомножитель <img align="absmiddle" width="155" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1417.gif"> просто отсутствует. 
+Итак, <img align="absmiddle" width="143" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1418.gif">, что и требовалось доказать.
+</p>
+<p class="qed">QED</p>
+</div>
+<div class="text">Чтобы доказывать , достаточно
+уметь вычислять  <img align="absmiddle" width="117" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1419.gif"> при больших <img align="bottom" width="13" height="14" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img18.gif">.  
+Но для этого нужно знать  <img align="absmiddle" width="19" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img871.gif">, что не всегда
+возможно. Скажем, <img align="absmiddle" width="19" height="19" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img871.gif"> может быть суммой (или ещё хуже!)
+нескольких других случайных величин, распределения которых не , и вычислить распределение их суммы
+по  или как-то ещё будет слишком сложно.
+<p>Если бы мы имели неравенства, позволяющие оценить
+<img align="absmiddle" width="117" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/imga1419.gif"> сверху чем-либо, что мы умеем
+устремлять к нулю и что проще вычисляется, то 
+мы получили бы по свойству зажатой последовательности:
+<img align="absmiddle" width="147" height="20" src="http://www.nsu.ru/mmf/tvims/chernova/tv/lec/img1420.gif">. </p>
+<p>Итак, неравенства Чебышёва.
+</p>
+</div>
+
+ 
+ 
+ 
+ 
+ 
+
+<b>  </b>  
+ <b>  </b>  
+ <b>  </b>  
+
+<p></p>
+<p>	
+<sup>1</sup> (16.05.1821 &#151; 8.12.1894)
+</p>
+<p>
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</p>
+</body>
