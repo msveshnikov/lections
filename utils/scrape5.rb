@@ -24,6 +24,8 @@ CSV.open("myfile.csv", "w") do |csv|
         next
       end
       page.xpath('//@style').remove
+      page.xpath('//@size').remove
+      page.xpath('//@face').remove
       page.css("a").remove
       page.css(".postmetadata").remove
       page.css(".widget-content").remove
@@ -46,7 +48,7 @@ CSV.open("myfile.csv", "w") do |csv|
         csv2 << [id, cat, link.text, "20151120", "20151120"]
         cat=id
       else
-        File.write("material/"+id+".html",page.css("p").to_s)
+        File.write("material/"+id+".html",page.css(css).to_s)
         csv << [id, cat, link.text, "20151120", "20151120", UnicodeUtils.downcase(link.text)]
       end
     }
