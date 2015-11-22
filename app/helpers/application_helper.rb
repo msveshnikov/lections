@@ -25,9 +25,9 @@ module ApplicationHelper
     end
   end
 
-  Colors=%w(#a2e5a4 #e5dd6f #ffcad3 #a0d1e5 #ffd69c #e7bbe3)
+  COLORS=%w(#a2e5a4 #e5dd6f #ffcad3 #a0d1e5 #ffd69c #e7bbe3)
 
   def my_color(n)
-    return Colors[n]
+    COLORS[n % 6]
   end
 end
