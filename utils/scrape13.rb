@@ -49,7 +49,7 @@ CSV.open("myfile.csv", "w") do |csv|
       page.css("address").remove
       page.xpath('//comment()').remove
       page.search("img").each do |img|
-        img['src']=site+ img['src']
+        img['src']="http://citforum.ru/database/osbd/"+ img['src']
       end
 
       l=page.css(css).to_s.length
