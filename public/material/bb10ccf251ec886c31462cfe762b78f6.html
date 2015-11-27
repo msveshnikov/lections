@@ -1,0 +1,38 @@
+<div class="document">
+
+
+
+
+<h4></h4>
+
+<pre>&lt;allocate cursor statement&gt; ::=
+
+   ALLOCATE &lt;extended cursor name&gt; [INSENSITIVE] [SCROLL]
+
+   CURSOR FOR &lt;extended statement name&gt;
+
+&lt;extended cursor name&gt; ::=
+
+ (&lt;scope option&gt;] &lt;simple value specification&gt;</pre>
+
+<p>
+
+<i>Комментарий:</i>
+
+</p>
+<p>
+
+Курсоры, определяемые с помощью оператора ALLOCATE CURSOR, фактически создаются при выполнении такого оператора и уничтожаются при выполнении оператора DEALLOCATE PREPARE или при завершении транзакции. В этом операторе имена курсора и подготовленного оператора SQL могут задаваться не только в литеральной форме, но и через переменные.
+
+<tt>&lt;scope option&gt;</tt> относится к области видимости имен: в пределах текущего модуля или в пределах текущей сессии.
+
+
+
+</p>
+<p></p>
+<center> ||  || <p>
+
+</p>
+<p></p>
+</center>
+</div>
