@@ -4,7 +4,7 @@ set :repo_url, 'https://max_sveshnikov:apple123@bitbucket.org/maxsoft777/lection
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
-set :bundle_flags, '--quiet'   # '--deployment --quiet' is the default
+set :bundle_flags, '--quiet' # '--deployment --quiet' is the default
 
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/home/ubuntu/lections'
@@ -23,6 +23,7 @@ namespace :deploy do
       execute :touch, release_path.join('tmp/restart.txt')
     end
   end
-
   after :publishing, :restart
 end
+
+after "deploy:updated", "newrelic:notice_deployment"
