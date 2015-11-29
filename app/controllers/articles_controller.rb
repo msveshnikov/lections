@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
 
   # GET /article/id
   def show
+    @rating = Rating.create(article_id: @article.id, score: 0)
   end
 
   def toggle

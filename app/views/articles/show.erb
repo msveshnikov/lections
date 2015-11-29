@@ -1,6 +1,30 @@
 <% provide(:title, @article.title) %>
 
+<div id="star"></div>
+
 <%= link_to image_tag(getfav(@article.id),
                       title: "Добавить в избранное", class: "fav", id: @article.id) %>
 
 <%= render file: "/public/material/"+@article.id+".html" %>
+
+Оцените материал:
+<div id="user_star"></div>
+<script>
+    $('#star').raty({
+        readOnly: true,
+        score: <%= @article.average_rating %>,
+        path: '/assets'
+    });
+
+    $('#user_star').raty({
+        score: <%= @rating.score %>,
+        path: '/assets',
+        click: function(score, evt) {
+            $.ajax({
+                url: '/ratings/' + <%= @rating.id %>,
+                type: 'PATCH',
+                data: { score: score }
+            });
+        }
+    });
+</script>

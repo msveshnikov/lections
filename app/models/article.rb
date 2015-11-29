@@ -1,6 +1,11 @@
 class Article < ActiveRecord::Base
   self.primary_key= :id
   belongs_to :category
+  has_many :ratings
+
+  def average_rating
+    ratings.sum(:score) / (ratings.where("score>0").size+0.000001)
+  end
 
   def self.search(query)
     query.gsub!(/['"%\\]/, '')
