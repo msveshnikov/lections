@@ -13,7 +13,7 @@ set :deploy_to, '/home/ubuntu/lections'
 #set :linked_files, %w(db/production.sqlite3)
 
 # Default value for keep_releases is 5
-set :keep_releases, 3
+set :keep_releases, 10
 
 namespace :deploy do
   desc 'Restart application'
