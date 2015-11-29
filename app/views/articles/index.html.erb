@@ -2,9 +2,11 @@
   Результаты поиска
 </h1>
 
+<%= render @categories %>
 <%= render @articles %>
 
-<% if @articles.size==0 %>
+
+<% if @articles.size==0 && @categories.size==0 %>
     Не найдено
     <br>
     Попробуйте указать ОДНО слово БЕЗ ОКОНЧАНИЯ
