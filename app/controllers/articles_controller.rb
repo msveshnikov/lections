@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles
   def index
-    add_breadcrumb 'МЕНЮ', :root_path
+    add_breadcrumb 'НАУКИ', :root_path
     if params[:search]
       @articles = Article.search(params[:search])
       redirect_to article_path(@articles[0]) if @articles.size == 1
@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @parent = Category.find(@article.parent)
     @megaparent = Category.find(@parent.parent) if @parent and @parent.parent != "data2"
-    add_breadcrumb 'МЕНЮ', :root_path
+    add_breadcrumb 'НАУКИ', :root_path
     add_breadcrumb @megaparent.title, @megaparent if @megaparent
     add_breadcrumb @parent.title, @parent if @parent
     add_breadcrumb @article.title, @article
