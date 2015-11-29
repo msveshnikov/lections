@@ -8,6 +8,8 @@ class ArticlesController < ApplicationController
     add_breadcrumb 'НАУКИ', :root_path
     if params[:search]
       @articles = Article.search(params[:search])
+      search = Search.new(ip: request.remote_ip.encode('ascii'), term: params[:search], found: @articles.size)
+      search.save
       redirect_to article_path(@articles[0]) if @articles.size == 1
     else
       @articles = Article.all

@@ -5,10 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '>= 4.2'
 gem 'newrelic_rpm'
 
+gem 'will_paginate'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'russian', '~> 0.6.0'
 gem 'bootstrap-will_paginate'
 gem 'breadcrumbs_on_rails'
+gem 'rails_admin'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -30,6 +32,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Use ActiveModel has_secure_password
+gem 'bcrypt'
 
 group :development do
   gem 'capistrano-rails'
