@@ -18,11 +18,11 @@
     });
 
     $('#user_star').raty({
-        score: <%= @rating.score %>,
+        score: 0,
         path: '/assets',
         click: function(score, evt) {
             $.ajax({
-                url: '/ratings/' + <%= @rating.id %>,
+                url: '/ratings/'+ "<%= @article.id %>",
                 type: 'PATCH',
                 data: { score: score }
             });

@@ -15,7 +15,7 @@ class Category < ActiveRecord::Base
     def self.check
       puts 'Doing hard work'
       Category.all.each do |art|
-        next if art.parent!="pharm"
+        #next if art.parent!="pharm"
         art.low=art.title.mb_chars.downcase
         art.save!
       end
