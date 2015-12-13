@@ -20,7 +20,7 @@ CSV.open("myfile.csv", "w") do |csv|
       p s
       if link.css("h3").first
         id=Digest::MD5.hexdigest(site+s)
-        csv2 << [id, "alg", link.css('h3,h2').text, "20151220", "20151120", UnicodeUtils.downcase(link.css('h3,h2').text)]
+        csv2 << [id, "alg", link.css('h3,h2').text, "2015-12-08", "2015-12-08", UnicodeUtils.downcase(link.css('h3,h2').text)]
         cat=id
       else
         page = Nokogiri::HTML(open(site+link.css('a').first["href"]))
@@ -50,7 +50,7 @@ CSV.open("myfile.csv", "w") do |csv|
         id=Digest::MD5.hexdigest(site+link.css('a').first["href"])
 
         File.write("material/"+id+".html", "# encoding: windows-1251\n" +page.css(css).to_s)
-        csv << [id, cat, s, "20151120", "20151120", UnicodeUtils.downcase(s)]
+        csv << [id, cat, s, "2015-12-08", "2015-12-08", UnicodeUtils.downcase(s)]
 
 
       end
