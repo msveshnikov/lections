@@ -26,4 +26,4 @@ namespace :deploy do
   after :publishing, :restart
 end
 
-after "deploy:updated", "newrelic:notice_deployment"
+#after "deploy:updated", "newrelic:notice_deployment"
