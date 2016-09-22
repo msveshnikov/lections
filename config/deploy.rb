@@ -1,5 +1,5 @@
 set :application, 'Lections'
-set :repo_url, 'https://max_sveshnikov:apple123@bitbucket.org/maxsoft777/lections.git'
+set :repo_url, 'https://max_sveshnikov:Apple123@bitbucket.org/maxsoft777/lections.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
