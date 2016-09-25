@@ -8,7 +8,13 @@
   <meta name="MobileOptimized" content="320"/>
   <meta name="HandheldFriendly" content="true"/>
   <%= csrf_meta_tags %>
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1351673544337847",
+    enable_page_level_ads: true
+  });
+</script>
 </head>
 <body>
 <%= link_to image_tag("topsmall.jpg", style: "width:100%;"), root_path %>
@@ -32,6 +38,12 @@
       </script>
     </div>
 <% end %>
+
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ru', layout: google.translate.TranslateElement.FloatPosition.BOTTOM_LEFT, autoDisplay: true, gaTrack: true, gaId: 'UA-33888137-1'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <%= image_tag("footsmall.jpg", style: "width:100%;") %>
 </body>
